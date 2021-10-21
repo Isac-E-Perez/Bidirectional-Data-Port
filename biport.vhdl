@@ -6,7 +6,7 @@ entity biport is
         send : in std_logic_vector(3 downto 0);
         occurrence : in std_logic;
         recieve : out std_logic_vector(3 downto 0); 
-        data : inout std_logic_vecotr(3 downto 0) 
+        data : inout std_logic_vector(3 downto 0) 
         );
 end biport;
   
