@@ -16,7 +16,7 @@ architecture behavioral of biport_tb is
 
 -- Input
 signal send : std_logic_vector(3 downto 0) := (others => '0'); 
-signal occurrence std_logic := '0';
+signal occurrence : std_logic := '0';
 
 -- Output
 signal recieve : out std_logic_vector(3 downto 0);
