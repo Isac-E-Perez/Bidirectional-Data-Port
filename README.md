@@ -8,4 +8,6 @@ Bidirectional is a communications mode that is capable of transmitting data in b
 
 ### Note:
 
+To avoid data contention, make sure that DATA = Z when data is to be an output.
+
 ### Results:
