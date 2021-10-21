@@ -19,10 +19,10 @@ signal send : std_logic_vector(3 downto 0) := (others => '0');
 signal occurrence : std_logic := '0';
 
 -- Output
-signal recieve : out std_logic_vector(3 downto 0);
+signal recieve : std_logic_vector(3 downto 0);
 
 -- Inout
-signal data : inout std_logic_vector(3 downto 0);
+signal data : std_logic_vector(3 downto 0);
 
 begin 
   uut: biport port map(send=>send, occurrence=>occurrence, recieve=>recieve, data=>data);
