@@ -31,9 +31,9 @@ begin
     begin
       
       data <= "ZZZZ"; wait for 100 ns;
-      occurrence <= '0'; send <= x"A"; Data <= "ZZZZ"; wait for 20 ns;
+      occurrence <= '0'; send <= x"A"; data <= "ZZZZ"; wait for 20 ns;
       occurrence <= '1'; data <= x"E"; wait for 20 ns;
-      occurrence <= '0'; send <= x"9"; Data <= "ZZZZ"; wait for 20 ns;
+      occurrence <= '0'; send <= x"9"; data <= "ZZZZ"; wait for 20 ns;
       occurrence <= '1'; send <= x"3"; wait for 20 ns;
                          data <= x"C"; 
       
