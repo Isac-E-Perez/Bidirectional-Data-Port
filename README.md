@@ -24,6 +24,10 @@ In VHDL, *send* and *occurrence* are the inputs (**IN**), *recieve* is an output
 
 ![1](https://user-images.githubusercontent.com/89553126/138345200-267e74d9-7657-4249-9115-86857cbd3c17.png)
 
+Afterwards, I worked on the behavioral (functional) simulation. Here, I will only verify the operations of the circuit. Stimuli is provided to the circuit, so I can verify the outputs behave as I expect. The VHDL file called 'biport_tb' is where I specified the stimuli to the circuit.
+
+![1](https://user-images.githubusercontent.com/89553126/138346344-1d5c00cd-0a63-4389-b4b1-b1723be2ad5a.png)
+
 
 ![0](https://user-images.githubusercontent.com/89553126/138342475-d8fb0988-fc97-45d8-a73c-cdf2384f0a88.png)
 
