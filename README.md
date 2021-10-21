@@ -14,6 +14,8 @@ To avoid data contention, I made sure that the data equalled **Z** when data is 
 
 ### Results:
 
+In VHDL, *send* and *occurrence* are the inputs (**IN**), *recieve* is an output (**OUT**) and *data* is an input and output (**INOUT**) of my project.
+
 ![0](https://user-images.githubusercontent.com/89553126/138342475-d8fb0988-fc97-45d8-a73c-cdf2384f0a88.png)
 
 ![1](https://user-images.githubusercontent.com/89553126/138342485-d133533a-30dc-47b9-bd9e-a21c44ba5409.png)
