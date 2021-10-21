@@ -1,4 +1,4 @@
-# Bidirectional Port
+# Bidirectional Data Port
 
 ### About:
 
