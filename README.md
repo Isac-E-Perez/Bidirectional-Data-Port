@@ -50,7 +50,7 @@ Finally, I verified the units outputted by using a waveform viewer.
 
 ***A signal is being *send*, *data* is produced, and the *occurrence* is **1** so the *data* is *recieve* by the user**
 
-In this case, *ZZZZ* *recieve* as to avoid data contention. Think of has a reset for the *recieve* *data* so more *data* can be produced later.
+In this case, *ZZZZ* *recieve* as to avoid data contention. Think of has a reset for the *recieve* *data* so more *data* can be *recieve* later.
 
 ![4](https://user-images.githubusercontent.com/89553126/138342508-65b80292-0d76-4564-be36-5ebe7201577a.png)
 
