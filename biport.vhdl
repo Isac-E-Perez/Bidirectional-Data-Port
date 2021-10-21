@@ -15,4 +15,4 @@ architecture behavioral of biport is
   begin
     data <= send when occurrence = '0' else (others => 'Z');
     recieve <= data when occurrence = '1' else (others => 'Z');
-  end behavioral;  
+end behavioral;  
