@@ -10,7 +10,7 @@ Bidirectional is a communications mode that is capable of transmitting data in b
 
 ### Note:
 
-To avoid data contention, make sure that data = Z when data is to be an output. In database management systems, block contention (or data contention) refers to multiple processes or instances competing for access to the same index or data block at the same time.
+To avoid data contention, I made sure that the data equalled **Z** when data is to be an output. In database management systems, block contention (or data contention) refers to multiple processes or instances competing for access to the same index or data block at the same time.
 
 ### Results:
 
