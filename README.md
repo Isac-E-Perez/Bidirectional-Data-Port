@@ -16,6 +16,15 @@ To avoid data contention, I made sure that the data equalled **Z** when data is 
 
 In VHDL, *send* and *occurrence* are the inputs (**IN**), *recieve* is an output (**OUT**) and *data* is an input and output (**INOUT**) of my project.
 
+**I/O's are specified here (the circuit is specified using a Hardware Desciption Language)**
+
+![0](https://user-images.githubusercontent.com/89553126/138345152-3f130883-ac5a-4d2b-b326-e2b7da201452.png)
+
+**Internal description of the eight segment decoder is specified here**
+
+![1](https://user-images.githubusercontent.com/89553126/138345200-267e74d9-7657-4249-9115-86857cbd3c17.png)
+
+
 ![0](https://user-images.githubusercontent.com/89553126/138342475-d8fb0988-fc97-45d8-a73c-cdf2384f0a88.png)
 
 ![1](https://user-images.githubusercontent.com/89553126/138342485-d133533a-30dc-47b9-bd9e-a21c44ba5409.png)
