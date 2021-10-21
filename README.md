@@ -2,7 +2,7 @@
 
 ### About:
 
-For this project, I created a bidirectional data port with the use of VHDL code. The bidirectional data port has an output of *recieve* which was influence by the *occurrence*. Bidirectional is a communications mode that is capable of transmitting data in both directions (send and receive), but not at the same time.
+For this project, I created a bidirectional data port with the use of VHDL code. The circuit contains an input bundle of four signals and an output bundle of four signals. The bidirectional data port has an output of *recieve* which was influence by the *occurrence*. Bidirectional is a communications mode that is capable of transmitting data in both directions (send and receive), but not at the same time.
 
 **Digital Design Diagram**
 
