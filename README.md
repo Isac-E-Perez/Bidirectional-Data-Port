@@ -6,8 +6,8 @@ For this project, I created a bidirectional data port with the use of VHDL code.
 
 **Digital Design Diagram**
 
-<img width="321" alt="Screen Shot 2021-10-21 at 12 53 04 AM" src="https://user-images.githubusercontent.com/89553126/138219463-1ed53d37-0c29-4532-9049-e213202ff03a.png">
-
+<img width="321" alt="Screen Shot 2021-10-21 at 3 09 35 PM" src="https://user-images.githubusercontent.com/89553126/138349722-7cf2669f-fc19-46e4-82a0-4dc59aed5eac.png">
+ 
 ### Note:
 
 To avoid data contention, I made sure that the data equalled **Z** when data is to be an output again. In database management systems, block contention (or data contention) refers to multiple processes or instances competing for access to the same index or data block at the same time.
