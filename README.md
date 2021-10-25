@@ -20,7 +20,7 @@ In VHDL, *send* and *occurrence* are the inputs (**IN**), *recieve* is an output
 
 ![0](https://user-images.githubusercontent.com/89553126/138345152-3f130883-ac5a-4d2b-b326-e2b7da201452.png)
 
-**Internal description of the eight segment decoder is specified here**
+**Internal description of the bidirectional data port is specified here**
 
 ![1](https://user-images.githubusercontent.com/89553126/138345200-267e74d9-7657-4249-9115-86857cbd3c17.png)
 
