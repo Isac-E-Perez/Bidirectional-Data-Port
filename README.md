@@ -58,4 +58,4 @@ In this case, *ZZZZ* *recieve* as to avoid data contention. Think of has a reset
 
 ![5](https://user-images.githubusercontent.com/89553126/138342517-5a9bdec3-e9ba-4a35-b025-53515b7e5717.png)
 
-Looking back to the digital design diagram and the definition of a bidirectional data port, the code produce what should be expected, therefore, I know my bidirectional data port code is operating correctly.
+Looking back to the digital design diagram, waveform, and the definition of a bidirectional data port, the code produce what should be expected, therefore, I know my bidirectional data port code is operating correctly.
