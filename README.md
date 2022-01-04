@@ -18,15 +18,78 @@ In VHDL, *send* and *occurrence* are the inputs (**IN**), *recieve* is an output
 
 **I/O's are specified here (the circuit is specified using a Hardware Desciption Language)**
 
-![0](https://user-images.githubusercontent.com/89553126/138345152-3f130883-ac5a-4d2b-b326-e2b7da201452.png)
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity biport is
+  port (
+        send : in std_logic_vector(3 downto 0);
+        occurrence : in std_logic;
+        recieve : out std_logic_vector(3 downto 0); 
+        data : inout std_logic_vector(3 downto 0) 
+        );
+end biport;
+```
 
 **Internal description of the bidirectional data port is specified here**
 
-![1](https://user-images.githubusercontent.com/89553126/138345200-267e74d9-7657-4249-9115-86857cbd3c17.png)
+```vhdl
+architecture behavioral of biport is
+  
+begin
+    data <= send when occurrence = '0' else (others => 'Z');
+    recieve <= data when occurrence = '1' else (others => 'Z');
+end behavioral;  
+```
 
 Afterwards, I worked on the behavioral (functional) simulation. Here, I will only verify the operations of the circuit. Stimuli is provided to the circuit, so I can verify the outputs behave as I expect. The VHDL file called 'biport_tb' is where I specified the stimuli to the circuit.
 
-![1](https://user-images.githubusercontent.com/89553126/138346344-1d5c00cd-0a63-4389-b4b1-b1723be2ad5a.png)
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity biport_tb is 
+end biport_tb;
+  
+architecture behavioral of biport_tb is
+  component biport is
+    port (
+          send : in std_logic_vector(3 downto 0);
+          occurrence : in std_logic;
+          recieve : out std_logic_vector(3 downto 0); 
+          data : inout std_logic_vector(3 downto 0) 
+          );
+  end component;
+
+-- Input
+signal send : std_logic_vector(3 downto 0) := (others => '0'); 
+signal occurrence : std_logic := '0';
+
+-- Output
+signal recieve : std_logic_vector(3 downto 0);
+
+-- Inout
+signal data : std_logic_vector(3 downto 0);
+
+begin 
+  uut: biport port map(send=>send, occurrence=>occurrence, recieve=>recieve, data=>data);
+    
+    stim_proc: process
+    begin
+      
+      data <= "ZZZZ"; wait for 100 ns;
+      occurrence <= '0'; send <= x"A"; data <= "ZZZZ"; wait for 20 ns;
+      occurrence <= '1'; data <= x"E"; wait for 20 ns;
+      occurrence <= '0'; send <= x"9"; data <= "ZZZZ"; wait for 20 ns;
+      occurrence <= '1'; send <= x"3"; wait for 20 ns;
+                         data <= x"C"; 
+      
+      assert false report "Reached end of test";
+      wait;
+    end process;
+end behavioral;
+```
 
 The entity block has no input or output singals going into or out of the 'testbench', which makes sense since 'testbench' is a complete unit. The 'testbench' will go ahead and send the signals to the circuit in which it will read back those signals. Afterwards, I could check out whether these signals are correct. Therefore, I don't need anything going into or out of the testbench. Additionally, the process statement is a concurrent statement which is constituted of sequential statements exclusively.
 
